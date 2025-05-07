@@ -22,7 +22,7 @@ def scrape(query="streetwear", scrolls=2):
                 continue
         browser.close()
 
-        with open("scraped_data.json", "w") as f:
+        with open("fashion_pinterest_data.json", "w") as f:
             json.dump(results, f, indent=2)
 
 if __name__ == "__main__":
